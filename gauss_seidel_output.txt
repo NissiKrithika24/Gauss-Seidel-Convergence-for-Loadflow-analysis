@@ -1,0 +1,32 @@
+
+Line data [From To R X]:
+   1.000000   2.000000   0.020000   0.040000
+   1.000000   3.000000   0.010000   0.030000
+   2.000000   3.000000   0.012500   0.025000
+
+Bus data [Bus Type V delta Pgen Qgen Pload Qload Qmin Qmax]:
+ Columns 1 through 7:
+
+     1.0000     1.0000     1.0500          0          0          0          0
+     2.0000     2.0000     1.0000          0   200.0000          0          0
+     3.0000     3.0000     1.0000          0          0          0   200.0000
+
+ Columns 8 through 10:
+
+          0          0          0
+          0  -100.0000   300.0000
+   100.0000          0          0
+
+Y-bus matrix:
+   20 - 50i  -10 + 20i  -10 + 30i
+  -10 + 20i   26 - 52i  -16 + 32i
+  -10 + 30i  -16 + 32i   26 - 62i
+Converged in 26 iterations.
+ 
+Bus Voltages in Polar Form:
+Bus 1: |V| = 1.0500 pu, angle 0.000 deg
+Bus 2: |V| = 1.0000 pu, angle 0.787 deg
+Bus 3: |V| = 1.0246 pu, angle -1.505 deg
+
+Reactive powers at PV buses:
+Bus 2: Q = 0.0000 pu

@@ -1,0 +1,24 @@
+Sample input for gauss_seidel_loadflow.m (the interactive version)
+====================================================================
+This is the exact set of values to type in when MATLAB/Octave prompts
+you, for the 3-bus test system used to generate the results in this repo.
+
+Enter total number of buses: 3
+Enter total number of transmission lines: 3
+
+Line data [From To R X]:
+Line 1: [1 2 0.02 0.04]
+Line 2: [1 3 0.01 0.03]
+Line 3: [2 3 0.0125 0.025]
+
+Bus data [Bus Type V delta Pgen Qgen Pload Qload Qmin Qmax]:
+Bus 1: [1 1 1.05 0   0   0 0   0   0    0]
+Bus 2: [2 2 1.00 0   200 0 0   0   -100 300]
+Bus 3: [3 3 1.00 0   0   0 200 100 0    0]
+
+Notes on units:
+- Bus type: 1 = Slack, 2 = PV, 3 = PQ
+- V is in per-unit, delta (angle) is in degrees
+- Pgen/Qgen/Pload/Qload/Qmin/Qmax are in MW / MVAr on a 100 MVA base
+  (the script internally divides them by 100 to convert to per-unit)
+- Line R and X must already be in per-unit
